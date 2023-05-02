@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <ui:composition template="../template/layout.xhtml">
+        <ui:define name="pageTitle">Avarage</ui:define>
+        <ui:define name="pageContent">
+
+            <p:card class="mr-8 ml-8">
+                <f:facet name="title">
+                    PROMEDIO DE NÚMEROS
+                </f:facet>
+
+                <h:outputText value="El promedio de los números es: #{numberController.average()}" style="font-size: 20px; color: #000000; font-weight: bold;" />
+            </p:card>
+
+        </ui:define>
+    </ui:composition>
+
+</html>
